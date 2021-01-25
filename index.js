@@ -105,7 +105,13 @@ Use the getInningScore() function below to do the following:
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
 function getInningScore(inningCB) {
-	/*Your Code Here */
+	let homeScore = inningCB();
+	let awayScore = inningCB();
+
+	return {
+		Home: homeScore,
+		Away: awayScore,
+	};
 }
 
 /* ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
